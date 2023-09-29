@@ -61,20 +61,18 @@ jobs:
         cd ${GITHUB_WORKSPACE}
         source build/${FOLDER_NAME}/common.sh && CPU_Priority
 
-    - name: 释放Ubuntu磁盘空间
-      uses: jlumbroso/free-disk-space@main
+    - name: 清理ubuntu空间
+      uses: easimon/maximize-build-space@master
       with:
-        # this might remove tools that are actually needed,
-        # if set to "true" but frees about 6 GB
-        tool-cache: true
-        # all of these default to true, but feel free to set to
-        # "false" if necessary for your workflow
-        android: true
-        dotnet: true
-        haskell: true
-        large-packages: true
-        swap-storage: true
-        
+        root-reserve-mb: 6144
+        swap-size-mb: 1024
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+        remove-codeql: 'true'
+        remove-docker-images: 'true'
+        build-mount-path: '/workdir'
+
     - name: 部署编译环境
       env:
         DEBIAN_FRONTEND: noninteractive
