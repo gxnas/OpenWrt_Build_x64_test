@@ -5,7 +5,10 @@
 # 不要一下就拉取别人一个插件包N多插件的，多了没用，增加编译错误，自己需要的才好
 
 #添加chatgpt插件
-git clone https://github.com/sirpdboy/chatgpt-web.git package/luci-app-chatgpt
+git clone https://github.com/sirpdboy/luci-app-chatgpt-web.git package/luci-app-chatgpt
+
+#添加partexp插件
+git clone https://github.com/sirpdboy/luci-app-partexp.git package/luci-app-partexp
 
 
 # 后台IP设置
