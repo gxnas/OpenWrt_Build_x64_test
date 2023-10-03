@@ -74,8 +74,14 @@ jobs:
         haskell: true
         #large-packages: true
         swap-storage: true
-        #查看Ubuntu磁盘空间
-        df -hT ${PWD}
+
+    - name: 查看Ubuntu磁盘空间
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        echo "================================================="
+        echo "文件系统        类型   容量  已用  可用 使用% 挂载点"
+        df -hT $PWD
 
     - name: 部署编译环境
       env:
