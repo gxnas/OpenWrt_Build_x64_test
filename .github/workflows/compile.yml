@@ -74,6 +74,8 @@ jobs:
         haskell: true
         #large-packages: true
         swap-storage: true
+        #查看Ubuntu磁盘空间
+        df -hT ${PWD}
 
     - name: 部署编译环境
       env:
