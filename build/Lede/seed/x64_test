@@ -46,8 +46,6 @@ CONFIG_NGINX_NAXSI=y
 CONFIG_NGINX_PCRE=y
 CONFIG_NGINX_UBUS=y
 CONFIG_PACKAGE_6in4=y
-CONFIG_PACKAGE_6rd=y
-CONFIG_PACKAGE_6to4=y
 CONFIG_PACKAGE_TAR_BZIP2=y
 CONFIG_PACKAGE_TAR_GZIP=y
 CONFIG_PACKAGE_TAR_XZ=y
@@ -70,6 +68,7 @@ CONFIG_PACKAGE_coreutils-timeout=y
 # CONFIG_PACKAGE_dbus is not set
 CONFIG_PACKAGE_ddns-go=y
 CONFIG_PACKAGE_dnsforwarder=y
+# CONFIG_PACKAGE_dnsmasq_full_dhcpv6 is not set
 CONFIG_PACKAGE_dnsproxy=y
 CONFIG_PACKAGE_etherwake=y
 CONFIG_PACKAGE_frpc=y
@@ -86,9 +85,11 @@ CONFIG_PACKAGE_iptables-mod-ipopt=y
 CONFIG_PACKAGE_iptables-mod-iprange=y
 CONFIG_PACKAGE_iptables-mod-socket=y
 CONFIG_PACKAGE_iputils-arping=y
-CONFIG_PACKAGE_ipv6helper=y
 CONFIG_PACKAGE_jq=y
-# CONFIG_PACKAGE_kmod-crypto-kpp is not set
+CONFIG_PACKAGE_kmod-crypto-lib-chacha20=y
+CONFIG_PACKAGE_kmod-crypto-lib-chacha20poly1305=y
+CONFIG_PACKAGE_kmod-crypto-lib-curve25519=y
+CONFIG_PACKAGE_kmod-crypto-lib-poly1305=y
 CONFIG_PACKAGE_kmod-crypto-sha512=y
 CONFIG_PACKAGE_kmod-fuse=y
 CONFIG_PACKAGE_kmod-inet-diag=y
@@ -102,6 +103,8 @@ CONFIG_PACKAGE_kmod-ipt-offload=y
 CONFIG_PACKAGE_kmod-ipt-physdev=y
 CONFIG_PACKAGE_kmod-ipt-socket=y
 CONFIG_PACKAGE_kmod-iptunnel=y
+CONFIG_PACKAGE_kmod-iptunnel4=y
+CONFIG_PACKAGE_kmod-lib-zlib-deflate=y
 CONFIG_PACKAGE_kmod-md-mod=y
 CONFIG_PACKAGE_kmod-md-raid0=y
 CONFIG_PACKAGE_kmod-md-raid1=y
@@ -122,6 +125,9 @@ CONFIG_PACKAGE_kmod-oaf=y
 # CONFIG_PACKAGE_kmod-shortcut-fe is not set
 # CONFIG_PACKAGE_kmod-shortcut-fe-cm is not set
 CONFIG_PACKAGE_kmod-sit=y
+CONFIG_PACKAGE_kmod-udptunnel4=y
+CONFIG_PACKAGE_kmod-udptunnel6=y
+CONFIG_PACKAGE_kmod-wireguard=y
 # CONFIG_PACKAGE_libavahi-client is not set
 # CONFIG_PACKAGE_libavahi-dbus-support is not set
 CONFIG_PACKAGE_libbz2=y
@@ -142,13 +148,16 @@ CONFIG_PACKAGE_libltdl=y
 CONFIG_PACKAGE_liblua5.3=y
 CONFIG_PACKAGE_liblzma=y
 CONFIG_PACKAGE_libmaxminddb=y
+CONFIG_PACKAGE_libminiupnpc=y
 CONFIG_PACKAGE_libmspack=y
+CONFIG_PACKAGE_libnatpmp=y
 CONFIG_PACKAGE_libnetsnmp=y
 CONFIG_PACKAGE_libpcre2=y
 CONFIG_PACKAGE_libpng=y
 # CONFIG_PACKAGE_libpopt is not set
 CONFIG_PACKAGE_libruby=y
 CONFIG_PACKAGE_libsqlite3=y
+CONFIG_PACKAGE_libstdcpp=y
 # CONFIG_PACKAGE_libtasn1 is not set
 CONFIG_PACKAGE_libtiff=y
 # CONFIG_PACKAGE_liburing is not set
@@ -200,7 +209,6 @@ CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_DNSFORWARDER=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING=y
 CONFIG_PACKAGE_luci-app-uhttpd=y
 # CONFIG_PACKAGE_luci-app-vsftpd is not set
-# CONFIG_PACKAGE_luci-app-wireguard is not set
 CONFIG_PACKAGE_luci-app-wolplus=y
 CONFIG_PACKAGE_luci-i18n-alist-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
@@ -230,6 +238,7 @@ CONFIG_PACKAGE_luci-i18n-wolplus-zh-cn=y
 CONFIG_PACKAGE_luci-lib-taskd=y
 CONFIG_PACKAGE_luci-lib-xterm=y
 CONFIG_PACKAGE_luci-proto-ipv6=y
+CONFIG_PACKAGE_luci-proto-wireguard=y
 CONFIG_PACKAGE_lucky=y
 CONFIG_PACKAGE_mdadm=y
 CONFIG_PACKAGE_mwan3=y
@@ -237,10 +246,6 @@ CONFIG_PACKAGE_netdata=y
 CONFIG_PACKAGE_nginx-ssl=y
 CONFIG_PACKAGE_nginx-ssl-util=y
 CONFIG_PACKAGE_nginx-util=y
-CONFIG_PACKAGE_odhcp6c=y
-CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
-CONFIG_PACKAGE_odhcpd-ipv6only=y
-CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
 CONFIG_PACKAGE_oniguruma=y
 CONFIG_PACKAGE_open-vm-tools=y
 CONFIG_PACKAGE_openssh-sftp-server=y
@@ -304,6 +309,7 @@ CONFIG_PACKAGE_v2ray-geoip=y
 CONFIG_PACKAGE_v2ray-geosite=y
 CONFIG_PACKAGE_v2ray-plugin=y
 # CONFIG_PACKAGE_vsftpd-alt is not set
+CONFIG_PACKAGE_wireguard-tools=y
 # CONFIG_PACKAGE_wsdd2 is not set
 CONFIG_PACKAGE_xray-plugin=y
 CONFIG_PACKAGE_xz=y
@@ -335,14 +341,4 @@ CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
-# CONFIG_BUSYBOX_CONFIG_FEATURE_IP_LINK is not set
-# CONFIG_BUSYBOX_CONFIG_IP is not set
-CONFIG_PACKAGE_kmod-crypto-lib-chacha20=y
-CONFIG_PACKAGE_kmod-crypto-lib-chacha20poly1305=y
-CONFIG_PACKAGE_kmod-crypto-lib-curve25519=y
-CONFIG_PACKAGE_kmod-crypto-lib-poly1305=y
-CONFIG_PACKAGE_kmod-udptunnel4=y
-CONFIG_PACKAGE_kmod-udptunnel6=y
-CONFIG_PACKAGE_kmod-wireguard=y
-CONFIG_PACKAGE_luci-proto-wireguard=y
-CONFIG_PACKAGE_wireguard-tools=y
+# CONFIG_PACKAGE_kmod-crypto-kpp is not set
