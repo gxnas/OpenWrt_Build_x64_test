@@ -50,7 +50,6 @@ CONFIG_PACKAGE_TAR_BZIP2=y
 CONFIG_PACKAGE_TAR_GZIP=y
 CONFIG_PACKAGE_TAR_XZ=y
 CONFIG_PACKAGE_TAR_ZSTD=y
-CONFIG_PACKAGE_adbyby=y
 CONFIG_PACKAGE_alist=y
 CONFIG_PACKAGE_appfilter=y
 # CONFIG_PACKAGE_attr is not set
@@ -75,7 +74,6 @@ CONFIG_PACKAGE_etherwake=y
 CONFIG_PACKAGE_frpc=y
 CONFIG_PACKAGE_frps=y
 CONFIG_PACKAGE_fuse-utils=y
-CONFIG_PACKAGE_glib2=y
 CONFIG_PACKAGE_haproxy=y
 CONFIG_PACKAGE_hysteria=y
 CONFIG_PACKAGE_ip6tables=y
@@ -87,11 +85,7 @@ CONFIG_PACKAGE_iptables-mod-iprange=y
 CONFIG_PACKAGE_iptables-mod-socket=y
 CONFIG_PACKAGE_iputils-arping=y
 CONFIG_PACKAGE_jq=y
-CONFIG_PACKAGE_kmod-crypto-acompress=y
-CONFIG_PACKAGE_kmod-crypto-lib-chacha20=y
-CONFIG_PACKAGE_kmod-crypto-lib-chacha20poly1305=y
-CONFIG_PACKAGE_kmod-crypto-lib-curve25519=y
-CONFIG_PACKAGE_kmod-crypto-lib-poly1305=y
+# CONFIG_PACKAGE_kmod-crypto-kpp is not set
 CONFIG_PACKAGE_kmod-crypto-sha512=y
 CONFIG_PACKAGE_kmod-fuse=y
 CONFIG_PACKAGE_kmod-inet-diag=y
@@ -105,9 +99,6 @@ CONFIG_PACKAGE_kmod-ipt-offload=y
 CONFIG_PACKAGE_kmod-ipt-physdev=y
 CONFIG_PACKAGE_kmod-ipt-socket=y
 CONFIG_PACKAGE_kmod-iptunnel=y
-CONFIG_PACKAGE_kmod-iptunnel4=y
-CONFIG_PACKAGE_kmod-lib-lzo=y
-CONFIG_PACKAGE_kmod-lib-zlib-deflate=y
 CONFIG_PACKAGE_kmod-md-mod=y
 CONFIG_PACKAGE_kmod-md-raid0=y
 CONFIG_PACKAGE_kmod-md-raid1=y
@@ -128,9 +119,6 @@ CONFIG_PACKAGE_kmod-oaf=y
 # CONFIG_PACKAGE_kmod-shortcut-fe is not set
 # CONFIG_PACKAGE_kmod-shortcut-fe-cm is not set
 CONFIG_PACKAGE_kmod-sit=y
-CONFIG_PACKAGE_kmod-udptunnel4=y
-CONFIG_PACKAGE_kmod-udptunnel6=y
-CONFIG_PACKAGE_kmod-wireguard=y
 # CONFIG_PACKAGE_libavahi-client is not set
 # CONFIG_PACKAGE_libavahi-dbus-support is not set
 CONFIG_PACKAGE_libbz2=y
@@ -138,10 +126,8 @@ CONFIG_PACKAGE_libcap-bin=y
 CONFIG_PACKAGE_libcap-bin-capsh-shell="/bin/sh"
 # CONFIG_PACKAGE_libdaemon is not set
 # CONFIG_PACKAGE_libdbus is not set
-CONFIG_PACKAGE_libdnet=y
 CONFIG_PACKAGE_libevent2=y
 # CONFIG_PACKAGE_libexpat is not set
-CONFIG_PACKAGE_libffi=y
 CONFIG_PACKAGE_libfreetype=y
 CONFIG_PACKAGE_libfuse=y
 CONFIG_PACKAGE_libgd-full=y
@@ -151,18 +137,15 @@ CONFIG_PACKAGE_libltdl=y
 CONFIG_PACKAGE_liblua5.3=y
 CONFIG_PACKAGE_liblzma=y
 CONFIG_PACKAGE_libmaxminddb=y
-CONFIG_PACKAGE_libminiupnpc=y
-CONFIG_PACKAGE_libmspack=y
-CONFIG_PACKAGE_libnatpmp=y
 CONFIG_PACKAGE_libnetsnmp=y
 CONFIG_PACKAGE_libpcre2=y
 CONFIG_PACKAGE_libpng=y
 # CONFIG_PACKAGE_libpopt is not set
 CONFIG_PACKAGE_libruby=y
 CONFIG_PACKAGE_libsqlite3=y
-CONFIG_PACKAGE_libstdcpp=y
 # CONFIG_PACKAGE_libtasn1 is not set
 CONFIG_PACKAGE_libtiff=y
+# CONFIG_PACKAGE_libtirpc is not set
 # CONFIG_PACKAGE_liburing is not set
 CONFIG_PACKAGE_libwebp=y
 CONFIG_PACKAGE_libxml2=y
@@ -174,7 +157,6 @@ CONFIG_PACKAGE_lua-cjson=y
 CONFIG_PACKAGE_lua-maxminddb=y
 CONFIG_PACKAGE_luasocket=y
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set
-CONFIG_PACKAGE_luci-app-adbyby-plus=y
 CONFIG_PACKAGE_luci-app-adguardhome=y
 CONFIG_PACKAGE_luci-app-alist=y
 CONFIG_PACKAGE_luci-app-argon-config=y
@@ -193,20 +175,12 @@ CONFIG_PACKAGE_luci-app-kodexplorer=y
 CONFIG_PACKAGE_luci-app-lucky=y
 CONFIG_PACKAGE_luci-app-mosdns=y
 CONFIG_PACKAGE_luci-app-mwan3=y
+CONFIG_PACKAGE_luci-app-netdata=y
 CONFIG_PACKAGE_luci-app-oaf=y
 CONFIG_PACKAGE_luci-app-onliner=y
 CONFIG_PACKAGE_luci-app-openclash=y
 CONFIG_PACKAGE_luci-app-partexp=y
 CONFIG_PACKAGE_luci-app-passwall=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_SingBox=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=y
 CONFIG_PACKAGE_luci-app-passwall_Iptables_Transparent_Proxy=y
 CONFIG_PACKAGE_luci-app-poweroff=y
 CONFIG_PACKAGE_luci-app-ramfree=y
@@ -221,8 +195,8 @@ CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_DNSFORWARDER=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING=y
 CONFIG_PACKAGE_luci-app-uhttpd=y
 # CONFIG_PACKAGE_luci-app-vsftpd is not set
+# CONFIG_PACKAGE_luci-app-wireguard is not set
 CONFIG_PACKAGE_luci-app-wolplus=y
-CONFIG_PACKAGE_luci-i18n-adbyby-plus-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-alist-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-chatgpt-zh-cn=y
@@ -237,6 +211,7 @@ CONFIG_PACKAGE_luci-i18n-kodexplorer-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-lucky-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-mosdns-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-netdata-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-oaf-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-partexp-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
@@ -250,15 +225,14 @@ CONFIG_PACKAGE_luci-i18n-wolplus-zh-cn=y
 CONFIG_PACKAGE_luci-lib-taskd=y
 CONFIG_PACKAGE_luci-lib-xterm=y
 CONFIG_PACKAGE_luci-proto-ipv6=y
-CONFIG_PACKAGE_luci-proto-wireguard=y
 CONFIG_PACKAGE_lucky=y
 CONFIG_PACKAGE_mdadm=y
 CONFIG_PACKAGE_mwan3=y
+CONFIG_PACKAGE_netdata=y
 CONFIG_PACKAGE_nginx-ssl=y
 CONFIG_PACKAGE_nginx-ssl-util=y
 CONFIG_PACKAGE_nginx-util=y
 CONFIG_PACKAGE_oniguruma=y
-CONFIG_PACKAGE_open-vm-tools=y
 CONFIG_PACKAGE_openssh-sftp-server=y
 CONFIG_PACKAGE_php8=y
 CONFIG_PACKAGE_php8-cgi=y
@@ -320,7 +294,6 @@ CONFIG_PACKAGE_v2ray-geoip=y
 CONFIG_PACKAGE_v2ray-geosite=y
 CONFIG_PACKAGE_v2ray-plugin=y
 # CONFIG_PACKAGE_vsftpd-alt is not set
-CONFIG_PACKAGE_wireguard-tools=y
 # CONFIG_PACKAGE_wsdd2 is not set
 CONFIG_PACKAGE_xray-plugin=y
 CONFIG_PACKAGE_xz=y
@@ -333,7 +306,6 @@ CONFIG_PHP8_SYSTEMTZDATA=y
 CONFIG_SING_BOX_WITH_CLASH_API=y
 CONFIG_SING_BOX_WITH_DHCP=y
 CONFIG_SING_BOX_WITH_ECH=y
-CONFIG_SING_BOX_WITH_GVISOR=y
 CONFIG_SING_BOX_WITH_QUIC=y
 CONFIG_SING_BOX_WITH_UTLS=y
 CONFIG_SING_BOX_WITH_WIREGUARD=y
@@ -353,4 +325,14 @@ CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
-# CONFIG_PACKAGE_kmod-crypto-kpp is not set
+# CONFIG_BUSYBOX_CONFIG_FEATURE_IP_LINK is not set
+# CONFIG_BUSYBOX_CONFIG_IP is not set
+CONFIG_PACKAGE_kmod-crypto-lib-chacha20=y
+CONFIG_PACKAGE_kmod-crypto-lib-chacha20poly1305=y
+CONFIG_PACKAGE_kmod-crypto-lib-curve25519=y
+CONFIG_PACKAGE_kmod-crypto-lib-poly1305=y
+CONFIG_PACKAGE_kmod-udptunnel4=y
+CONFIG_PACKAGE_kmod-udptunnel6=y
+CONFIG_PACKAGE_kmod-wireguard=y
+CONFIG_PACKAGE_luci-proto-wireguard=y
+CONFIG_PACKAGE_wireguard-tools=y
