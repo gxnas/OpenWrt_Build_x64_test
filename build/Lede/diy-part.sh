@@ -13,6 +13,9 @@ git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.gi
 #添加bypass插件
 git clone https://github.com/shidahuilang/openwrt-package -b bypass package/luci-app-bypass
 
+#添加qBittorrent插件
+#git clone https://github.com/sbwml/openwrt-qBittorrent package/luci-app-qBittorrent
+
 
 #添加CPU使用率、编译作者、固件下载地址
 sed -i '/<tr><td width="33%"><%:CPU usage/a <tr><td width="33%"><%:Compiler author%></td><td><a target="_blank" href="https://wp.gxnas.com">【GXNAS博客】https://wp.gxnas.com</a></td></tr>' package/lean/autocore/files/x86/index.htm
