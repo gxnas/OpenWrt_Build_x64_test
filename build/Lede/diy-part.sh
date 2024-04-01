@@ -7,14 +7,12 @@
 #添加homeproxy插件
 git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 
-#添加unblockneteasemusic插件
-git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
-
 #添加bypass插件
 git clone https://github.com/shidahuilang/openwrt-package -b bypass package/luci-app-bypass
 
-#添加qBittorrent插件
-#git clone https://github.com/sbwml/openwrt-qBittorrent package/luci-app-qBittorrent
+#添加daed插件
+git clone https://github.com/QiuSimons/luci-app-daed package/dae
+
 
 
 #添加CPU使用率、编译作者、固件下载地址
