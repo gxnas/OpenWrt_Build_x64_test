@@ -7,14 +7,6 @@
 #添加homeproxy插件
 git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 
-#添加bypass插件
-git clone https://github.com/shidahuilang/openwrt-package -b bypass package/luci-app-bypass
-
-#添加daed插件
-git clone https://github.com/QiuSimons/luci-app-daed package/dae
-
-
-
 #添加CPU使用率、编译作者、固件下载地址
 sed -i '/<tr><td width="33%"><%:CPU usage/a <tr><td width="33%"><%:Compiler author%></td><td><a target="_blank" href="https://wp.gxnas.com">【GXNAS博客】https://wp.gxnas.com</a></td></tr>' package/lean/autocore/files/x86/index.htm
 sed -i '5a\msgid "Compiler author"' feeds/luci/modules/luci-base/po/zh-cn/base.po
@@ -64,7 +56,7 @@ export Customized_Information="OpenWrt_x64_测试版 by GXNAS build $(TZ=UTC-8 d
 
 # 更换固件内核
 #export Replace_Kernel="6.1"                  # 更换内核版本,在对应源码的[target/linux/架构]查看patches-x.x,看看x.x有啥就有啥内核了(填入内核x.x版本号,填0为不作修改)
-export Replace_Kernel="0"                     # 更换内核版本,在对应源码的[target/linux/架构]查看patches-x.x,看看x.x有啥就有啥内核了(填入内核x.x版本号,填0为不作修改)
+export Replace_Kernel="6.6"                     # 更换内核版本,在对应源码的[target/linux/架构]查看patches-x.x,看看x.x有啥就有啥内核了(填入内核x.x版本号,填0为不作修改)
 
 # 设置免密码登录(个别源码本身就没密码的)
 export Password_free_login="1"               # 设置首次登录后台密码为空（进入openwrt后自行修改密码）(1为启用命令,填0为不作修改)
