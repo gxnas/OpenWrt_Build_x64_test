@@ -11,6 +11,7 @@ git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-h
 git clone -b bypass https://github.com/shidahuilang/openwrt-package.git package/luci-app-bypass
 
 #添加UnblockNeteaseMusic插件
+rm -rf package/luci-app-unblockneteasemusic
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
 
 #添加CPU使用率、编译作者、固件下载地址
