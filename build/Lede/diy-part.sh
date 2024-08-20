@@ -8,8 +8,13 @@
 git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 
 #添加mosdns插件
-find ./ | grep Makefile | grep mosdns | xargs rm -f
+rm -rf packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 23.x packages/lang/golang
+rm -rf packages/net/v2ray-geodata
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+#find ./ | grep Makefile | grep mosdns | xargs rm -f
+#git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 
 
 #添加CPU使用率、编译作者、固件下载地址
