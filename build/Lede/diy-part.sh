@@ -14,7 +14,7 @@ rm -rf packages/net/mosdns
 git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
 cp -rf kenzok8-packages/mosdns package/mosdns
 cp -rf kenzok8-packages/luci-app-mosdns package/luci-app-mosdns
-find package/*/ -maxdepth 2 -path "*/Makefile" | xargs -i sed -i 's/include\ \.\.\/\.\.\/lang\/golang\/golang\-package\.mk/include \$(TOPDIR)\/feeds\/packages\/lang\/golang\/golang\-package\.mk/g' {}
+#find package/*/ -maxdepth 2 -path "*/Makefile" | xargs -i sed -i 's/include\ \.\.\/\.\.\/lang\/golang\/golang\-package\.mk/include \$(TOPDIR)\/feeds\/packages\/lang\/golang\/golang\-package\.mk/g' {}
 
 
 #添加CPU使用率、编译作者、固件下载地址
