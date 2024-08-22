@@ -8,6 +8,8 @@
 git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 
 #添加mosdns插件
+rm -rf packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 22.x packages/lang/golang
 rm -rf packages/net/mosdns
 git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
 cp -rf kenzok8-packages/mosdns package/mosdns
