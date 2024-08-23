@@ -5,16 +5,8 @@
 # 不要一下就拉取别人一个插件包N多插件的，多了没用，增加编译错误，自己需要的才好
 
 #添加homeproxy插件
-git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
-
-#添加mosdns插件
-rm -rf packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 22.x packages/lang/golang
-rm -rf packages/net/mosdns
-git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
-cp -rf kenzok8-packages/mosdns package/mosdns
-cp -rf kenzok8-packages/luci-app-mosdns package/luci-app-mosdns
-#find package/*/ -maxdepth 2 -path "*/Makefile" | xargs -i sed -i 's/include\ \.\.\/\.\.\/lang\/golang\/golang\-package\.mk/include \$(TOPDIR)\/feeds\/packages\/lang\/golang\/golang\-package\.mk/g' {}
+#git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
+git clone https://github.com/lxiaya/openwrt-homeproxy.git package/luci-app-homeproxy
 
 
 #添加CPU使用率、编译作者、固件下载地址
