@@ -12,7 +12,7 @@ git clone https://github.com/lxiaya/openwrt-homeproxy.git package/luci-app-homep
 rm -rf package/luci-app-mosdns
 rm -rf package/mosdns
 git clone -b v4 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
-git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+
 
 
 #添加CPU使用率、编译作者、固件下载地址
