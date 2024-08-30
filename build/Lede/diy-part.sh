@@ -5,12 +5,9 @@
 # 不要一下就拉取别人一个插件包N多插件的，多了没用，增加编译错误，自己需要的才好
 
 #luci改用openwrt-23.05
-if [[ $WRT_REPO == *"lede"* ]]; then
-	sed -i "/#src/d" ./wrt/feeds.conf.default
-	sed -i "s|\(src-git luci\).*|\1 https://github.com/coolsnowwolf/luci.git;openwrt-23.05|g" ./wrt/feeds.conf.default
-
-	echo "$WRT_REPO patch has been installed!"
-fi
+sed -i "/#src/d" ./feeds.conf.default
+sed -i "s|\(src-git luci\).*|\1 https://github.com/coolsnowwolf/luci.git;openwrt-23.05|g" ./feeds.conf.default
+echo "feeds源配置文件修改成功!"
 
 #添加homeproxy插件
 #git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
