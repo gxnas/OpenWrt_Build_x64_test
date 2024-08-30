@@ -4,11 +4,6 @@
 # 自行拉取插件之前请SSH连接进入固件配置里面确认过没有你要的插件再单独拉取你需要的插件
 # 不要一下就拉取别人一个插件包N多插件的，多了没用，增加编译错误，自己需要的才好
 
-#luci改用openwrt-23.05
-sed -i "/#src/d" ./feeds.conf.default
-sed -i "s|\(src-git luci\).*|\1 https://github.com/coolsnowwolf/luci.git;openwrt-23.05|g" ./feeds.conf.default
-echo "feeds源配置文件修改成功!"
-
 #添加homeproxy插件
 #git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 git clone https://github.com/lxiaya/openwrt-homeproxy.git package/luci-app-homeproxy
