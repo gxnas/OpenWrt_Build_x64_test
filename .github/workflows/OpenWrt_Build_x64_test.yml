@@ -9,7 +9,7 @@
 #
 #
 
-name: OpenWrt_Build_x64_test
+name: Lede_x64_test（大雕源码）
 on:
   workflow_dispatch:
     inputs:
