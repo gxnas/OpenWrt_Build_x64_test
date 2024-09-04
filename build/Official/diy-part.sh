@@ -76,7 +76,8 @@ export kernel_usage="stable"
 
 
 # 修改插件名字
-#sed -i 's/"终端"/"TTYD"/g' `egrep "终端" -rl ./`
+sed -i 's/"MultiWAN 管理器"/"MWAN3负载均衡"/g' `egrep "终端" -rl ./`
+sed -i 's/"终端"/"TTYD终端"/g' `egrep "终端" -rl ./`
 #sed -i 's/"网络存储"/"NAS"/g' `egrep "网络存储" -rl ./`
 #sed -i 's/"实时流量监测"/"流量"/g' `egrep "实时流量监测" -rl ./`
 #sed -i 's/"KMS 服务器"/"KMS激活"/g' `egrep "KMS 服务器" -rl ./`
