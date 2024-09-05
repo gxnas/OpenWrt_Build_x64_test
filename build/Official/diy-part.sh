@@ -13,9 +13,6 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall.git package/lu
 #echo "添加插件 luci-app-ssr-plus"
 git clone --depth=1 https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
 
-#添加bypass插件
-git clone --depth=1 https://github.com/shidahuilang/openwrt-package.git package/luci-app-bypass
-
 # 后台IP设置
 export Ipv4_ipaddr="192.168.1.11"           # 修改openwrt后台地址(填0为关闭)
 export Netmask_netm="255.255.255.0"         # IPv4 子网掩码（默认：255.255.255.0）(填0为不作修改)
