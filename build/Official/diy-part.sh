@@ -13,6 +13,9 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-a
 #echo "添加插件 luci-app-ssr-plus"
 git clone --depth=1 https://github.com/fw876/helloworld package/luci-app-ssr-plus
 
+#添加bypass插件
+git clone -b bypass https://github.com/shidahuilang/openwrt-package.git package/luci-app-bypass
+
 #添加dae插件
 git clone https://github.com/daeuniverse/dae.git package/dae
 
@@ -53,7 +56,6 @@ export Customized_Information="OpenWrt_x64_测试版 by GXNAS build $(TZ=UTC-8 d
 
 # 更换固件内核
 #export Replace_Kernel="0"                    # 更换内核版本,在对应源码的[target/linux/架构]查看patches-x.x,看看x.x有啥就有啥内核了(填入内核x.x版本号,填0为不作修改)
-export Replace_Kernel="6.1"                    # 更换内核版本,在对应源码的[target/linux/架构]查看patches-x.x,看看x.x有啥就有啥内核了(填入内核x.x版本号,填0为不作修改)
 
 # 设置免密码登录(个别源码本身就没密码的)
 export Password_free_login="1"               # 设置首次登录后台密码为空（进入openwrt后自行修改密码）(1为启用命令,填0为不作修改)
