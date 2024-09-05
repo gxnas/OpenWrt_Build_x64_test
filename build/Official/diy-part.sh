@@ -8,20 +8,13 @@
 git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 
 #echo "添加插件 luci-app-passwall"
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
 
 #echo "添加插件 luci-app-ssr-plus"
-git clone --depth=1 https://github.com/fw876/helloworld package/luci-app-ssr-plus
+git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
 
 #添加bypass插件
-mkdir package/luci-app-bypass
-cd package/luci-app-bypass
-git clone https://github.com/shidahuilang/openwrt-package.git
-cd openwrt-package
-cp -r luci-app-bypass ../
-cd ..
-rm -rf openwrt-package
-
+git clone https://github.com/shidahuilang/openwrt-package.git package/luci-app-ssr-plus
 
 #添加dae插件
 git clone https://github.com/daeuniverse/dae.git package/dae
