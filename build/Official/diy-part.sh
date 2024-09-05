@@ -17,7 +17,7 @@ git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
 git clone https://github.com/shidahuilang/openwrt-package.git package/luci-app-bypass
 
 #添加dae插件
-git clone https://github.com/daeuniverse/dae.git package/dae
+git clone https://github.com/daeuniverse/dae.git package/luci-app-daed
 
 # 后台IP设置
 export Ipv4_ipaddr="192.168.1.11"           # 修改openwrt后台地址(填0为关闭)
