@@ -14,7 +14,7 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-a
 git clone --depth=1 https://github.com/fw876/helloworld package/luci-app-ssr-plus
 
 #添加bypass插件
-svn checkout https://github.com/shidahuilang/openwrt-package/trunk/luci-app-bypass package/luci-app-bypass
+git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/Lede/luci-app-bypass package/luci-app-bypass
 
 #添加dae插件
 git clone https://github.com/daeuniverse/dae.git package/dae
