@@ -15,9 +15,10 @@ git clone --depth=1 https://github.com/fw876/helloworld package/luci-app-ssr-plu
 
 #添加bypass插件
 mkdir package/luci-app-bypass
+cd package/luci-app-bypass
 git clone https://github.com/shidahuilang/openwrt-package.git
 cd openwrt-package
-cp -r luci-app-bypass ..
+cp -r luci-app-bypass ../
 cd ..
 rm -rf openwrt-package
 
