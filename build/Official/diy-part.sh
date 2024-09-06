@@ -8,10 +8,10 @@
 git clone --depth=1 https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 
 #echo "添加插件 luci-app-passwall"
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
 
 #echo "添加插件 luci-app-ssr-plus"
-git clone --depth=1 https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
+#git clone --depth=1 https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
 
 # 后台IP设置
 export Ipv4_ipaddr="192.168.1.11"           # 修改openwrt后台地址(填0为关闭)
