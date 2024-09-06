@@ -7,12 +7,6 @@
 #添加luci-app-homeproxy插件
 git clone --depth=1 https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 
-#echo "添加插件 luci-app-passwall"
-#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
-
-#echo "添加插件 luci-app-ssr-plus"
-#git clone --depth=1 https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
-
 #添加luci-app-daed插件
 git clone https://github.com/QiuSimons/luci-app-daed.git package/luci-app-daed
 
@@ -46,7 +40,7 @@ export PassWall_luci_branch="0"             # passwall的源码分别有【luci�
 
 # 替换OpenClash的源码(默认master分支)
 export OpenClash_branch="0"                 # OpenClash的源码分别有【master分支】和【dev分支】(填0为使用master分支,填1为使用dev分支)
-export OpenClash_Core="2"                   # 增加OpenClash时,把核心下载好,(填1为下载【dev单核】,填2为下载【dev/meta/premium三核】,填0为不需要核心)
+export OpenClash_Core="1"                   # 增加OpenClash时,把核心下载好,(填1为下载【dev单核】,填2为下载【dev/meta/premium三核】,填0为不需要核心)
 
 # 个性签名,默认增加年月日[$(TZ=UTC-8 date "+%Y.%m.%d")]
 export Customized_Information="OpenWrt_x64_测试版 by GXNAS build $(TZ=UTC-8 date "+%Y.%m.%d")"  # 个性签名,你想写啥就写啥，(填0为不作修改)
@@ -86,8 +80,8 @@ export kernel_usage="stable"
 
 
 # 修改插件名字
-sed -i 's/"MultiWAN 管理器"/"MWAN3负载均衡"/g' `egrep "终端" -rl ./`
-sed -i 's/"终端"/"TTYD终端"/g' `egrep "终端" -rl ./`
+#sed -i 's/"MultiWAN 管理器"/"MWAN3负载均衡"/g' `egrep "终端" -rl ./`
+#sed -i 's/"终端"/"TTYD终端"/g' `egrep "终端" -rl ./`
 #sed -i 's/"网络存储"/"NAS"/g' `egrep "网络存储" -rl ./`
 #sed -i 's/"实时流量监测"/"流量"/g' `egrep "实时流量监测" -rl ./`
 #sed -i 's/"KMS 服务器"/"KMS激活"/g' `egrep "KMS 服务器" -rl ./`
