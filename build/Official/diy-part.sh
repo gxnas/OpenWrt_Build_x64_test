@@ -8,7 +8,7 @@
 git clone --depth=1 https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 
 #添加luci-app-daed插件
-git clone https://github.com/QiuSimons/luci-app-daed package/dae
+git clone -b master --depth 1 https://github.com/QiuSimons/luci-app-daed package/luci-app-daed
 
 # 后台IP设置
 export Ipv4_ipaddr="192.168.1.11"           # 修改openwrt后台地址(填0为关闭)
