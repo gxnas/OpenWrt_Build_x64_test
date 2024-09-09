@@ -18,7 +18,7 @@ git remote add origin https://github.com/immortalwrt/packages.git
 git config core.sparseCheckout true
 echo "net/daed" >> .git/info/sparse-checkout
 git pull origin master
-mv net/daed ../../package/daed
+mv net/daed ../package/daed
 cd ..
 rm -rf temp-clone
 
