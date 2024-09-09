@@ -10,6 +10,18 @@ git clone -b bypass https://github.com/shidahuilang/openwrt-package.git package/
 #添加luci-app-daed插件
 git clone -b master --depth 1 https://github.com/QiuSimons/luci-app-daed package/luci-app-daed
 
+#添加daed插件依赖
+mkdir temp-clone
+cd temp-clone
+git init
+git remote add origin https://github.com/immortalwrt/packages.git
+git config core.sparseCheckout true
+echo "net/daed" >> .git/info/sparse-checkout
+git pull origin master
+mv net/daed ../../package/daed
+cd ..
+rm -rf temp-clone
+
 #添加luci-app-homeproxy插件
 git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 
