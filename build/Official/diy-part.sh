@@ -10,7 +10,6 @@ git clone --depth=1 https://github.com/douglarek/luci-app-homeproxy.git package/
 #添加luci-app-daed插件
 git clone -b master --depth 1 https://github.com/QiuSimons/luci-app-daed package/luci-app-daed
 git clone https://github.com/QiuSimons/luci-app-daed-next.git package/luci-app-daed-next
-apt-get install -y clang-13
 
 #添加daed插件依赖，把xdp-sockets-diag模块写入package/kernel/linux/modules/netsupport.mk
 FILE_PATH="package/kernel/linux/modules/netsupport.mk"
