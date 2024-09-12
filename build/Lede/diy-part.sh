@@ -9,6 +9,7 @@ git clone -b bypass https://github.com/shidahuilang/openwrt-package.git package/
 
 #添加luci-app-daed插件
 git clone -b master --depth 1 https://github.com/QiuSimons/luci-app-daed package/luci-app-daed
+git clone https://github.com/QiuSimons/luci-app-daed-next.git package/luci-app-daed-next
 
 #添加luci-app-homeproxy插件
 git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
