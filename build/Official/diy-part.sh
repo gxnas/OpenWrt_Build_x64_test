@@ -11,16 +11,8 @@ git clone --depth=1 https://github.com/douglarek/luci-app-homeproxy.git package/
 #git clone -b master --depth 1 https://github.com/QiuSimons/luci-app-daed package/luci-app-daed
 #git clone https://github.com/QiuSimons/luci-app-daed-next.git package/luci-app-daed-next
 git clone https://github.com/gxnas/daed-next.git package/daed-next
-cp -rf package/daed-next/immortalwrt_pkg/dae packages/net/dae
-ln -sf ../../../feeds/packages/net/dae package/feeds/packages/dae
-cp -rf package/daed-next/lucidaednext/daed-next package/new/daed-next
-cp -rf package/daed-next/lucidaednext/luci-app-daed-next package/new/luci-app-daed-next
-rm -rf ./feeds/packages/net/daed
-git clone -b master --depth 1 https://github.com/QiuSimons/luci-app-daed package/new/luci-app-daed
-# btf
 wget -qO - https://github.com/immortalwrt/immortalwrt/commit/73e5679.patch | patch -p1
 wget https://github.com/immortalwrt/immortalwrt/raw/openwrt-23.05/target/linux/generic/backport-5.15/051-v5.18-bpf-Add-config-to-allow-loading-modules-with-BTF-mismatch.patch -O target/linux/generic/backport-5.15/051-v5.18-bpf-Add-config-to-allow-loading-modules-with-BTF-mismatch.patch
-# bpf_loop
 cp -f package/daed-next/bpf_loop/*.patch ./target/linux/generic/backport-5.15/
 
 #添加daed插件依赖，把xdp-sockets-diag模块写入package/kernel/linux/modules/netsupport.mk
