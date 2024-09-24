@@ -11,25 +11,6 @@ git clone --depth=1 https://github.com/douglarek/luci-app-homeproxy.git package/
 git clone -b master --depth 1 https://github.com/QiuSimons/luci-app-daed package/luci-app-daed
 git clone https://github.com/QiuSimons/luci-app-daed-next.git package/luci-app-daed-next
 
-#添加daed插件依赖，把xdp-sockets-diag模块写入package/kernel/linux/modules/netsupport.mk
-FILE_PATH="package/kernel/linux/modules/netsupport.mk"
-CONTENT=$(cat << 'EOF'
-define KernelPackage/xdp-sockets-diag
-  SUBMENU:=$(NETWORK_SUPPORT_MENU)
-  TITLE:=PF_XDP sockets monitoring interface support for ss utility
-  KCONFIG:= \
-	CONFIG_XDP_SOCKETS=y \
-	CONFIG_XDP_SOCKETS_DIAG
-  FILES:=$(LINUX_DIR)/net/xdp/xsk_diag.ko
-  AUTOLOAD:=$(call AutoLoad,31,xsk_diag)
-endef
-define KernelPackage/xdp-sockets-diag/description
-  Support for PF_XDP sockets monitoring interface used by the ss tool
-endef
-$(eval $(call KernelPackage,xdp-sockets-diag))
-EOF
-)
-
 # 后台IP设置
 export Ipv4_ipaddr="192.168.1.11"           # 修改openwrt后台地址(填0为关闭)
 export Netmask_netm="255.255.255.0"         # IPv4 子网掩码（默认：255.255.255.0）(填0为不作修改)
