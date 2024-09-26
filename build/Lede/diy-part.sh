@@ -64,6 +64,10 @@ export OpenClash_Core="2"                    # 增加OpenClash时,把核心下�
 # 个性签名,默认增加年月日[$(TZ=UTC-8 date "+%Y.%m.%d")]
 export Customized_Information="OpenWrt_x64_测试版 by GXNAS build $(TZ=UTC-8 date "+%Y.%m.%d")"  # 个性签名,你想写啥就写啥，(填0为不作修改)
 
+# 更换固件luci版本
+sed -i '/luci/d' feeds.conf.default
+sed -i '2i src-git luci https://github.com/coolsnowwolf/luci.git;openwrt-23.05' feeds.conf.default
+
 # 更换固件内核
 #export Replace_Kernel="6.1"                  # 更换内核版本,在对应源码的[target/linux/架构]查看patches-x.x,看看x.x有啥就有啥内核了(填入内核x.x版本号,填0为不作修改)
 export Replace_Kernel="6.6"                     # 更换内核版本,在对应源码的[target/linux/架构]查看patches-x.x,看看x.x有啥就有啥内核了(填入内核x.x版本号,填0为不作修改)
