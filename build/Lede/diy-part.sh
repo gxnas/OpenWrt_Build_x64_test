@@ -15,7 +15,8 @@ git clone https://github.com/QiuSimons/luci-app-daed-next.git package/luci-app-d
 git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 
 #添加luci-app-mosdns插件
-git clone -b v5-lua --depth 1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
+#git clone -b v5-lua --depth 1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
+git clone https://github.com/sbwml/luci-app-mosdns.git package/luci-app-mosdns
 
 #添加CPU使用率、编译作者、固件下载地址
 sed -i '/<tr><td width="33%"><%:CPU usage/a <tr><td width="33%"><%:Compiler author%></td><td><a target="_blank" href="https://wp.gxnas.com">【GXNAS博客】https://wp.gxnas.com</a></td></tr>' package/lean/autocore/files/x86/index.htm
