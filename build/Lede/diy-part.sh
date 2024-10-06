@@ -9,13 +9,11 @@ git clone -b bypass https://github.com/shidahuilang/openwrt-package.git package/
 
 #添加luci-app-daed插件
 git clone -b master --depth 1 https://github.com/QiuSimons/luci-app-daed package/luci-app-daed
-git clone https://github.com/QiuSimons/luci-app-daed-next.git package/luci-app-daed-next
 
 #添加luci-app-homeproxy插件
 git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
 
 #添加luci-app-mosdns插件
-#git clone https://github.com/sbwml/luci-app-mosdns.git package/luci-app-mosdns
 git clone -b v5-lua --depth 1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
 
 #添加CPU使用率、编译作者、固件下载地址
